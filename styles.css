@@ -213,7 +213,7 @@ p { margin: 0 0 1rem; color: var(--ink-soft); }
   aspect-ratio: 3 / 4;
   background: var(--bg-alt);
 }
-.hero__photo img { width: 100%; height: 100%; object-fit: cover; }
+.hero__photo img { width: 100%; height: 100%; object-fit: cover; object-position: top; }
 
 .hero__title {
   font-size: clamp(2.6rem, 5vw, 4rem);
@@ -534,7 +534,7 @@ p { margin: 0 0 1rem; color: var(--ink-soft); }
   background: var(--bg-alt);
   border-top: 3px solid var(--accent);
 }
-.bio__photo img { width: 100%; height: 100%; object-fit: cover; }
+.bio__photo img { width: 100%; height: 100%; object-fit: cover; object-position: top; }
 .bio__col p { font-size: 1.02rem; }
 .bio__facts {
   list-style: none;
