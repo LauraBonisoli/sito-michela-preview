@@ -32,18 +32,130 @@
 </header>
 
 <main>
-  <section class="hero" style="padding-bottom: 3rem;">
-    <div class="container">
-      <span class="eyebrow">Il mio approccio</span>
-      <h1 class="hero__title" style="font-size: clamp(2.2rem, 4vw, 3.2rem);">Il mio approccio</h1>
-      <p style="max-width: 60ch; font-size: 1.05rem;">
-        Questa pagina è un segnaposto di struttura <span class="placeholder-flag">contenuto da definire</span> —
-        qui andrà il contenuto reale relativo a "Il mio approccio", nello stesso stile della homepage
-        (titoli in Fraunces con parola in corsivo, testo in Inter, sezioni alternate chiaro/scuro).
-      </p>
-      <a class="btn btn--ghost" href="index.html">← Torna alla home</a>
+
+  <section class="page-hero">
+    <div class="container page-hero__grid">
+      <div>
+        <span class="eyebrow">Il mio approccio</span>
+        <h1>Un metodo <em class="accent-word">chiaro</em>, adattato a ogni persona.</h1>
+        <p class="page-hero__lede">
+          Come si svolge un percorso, dal primo contatto alla chiusura: cosa aspettarsi, seduta dopo seduta.
+          <span class="placeholder-flag">testo segnaposto</span>
+        </p>
+      </div>
+      <div class="page-hero__aside">
+        <strong>Il quadro teorico</strong>
+        <p style="margin:0;">Riferimento teorico e cornice metodologica in cui si inserisce il lavoro clinico.
+        <span class="placeholder-flag">testo segnaposto</span></p>
+      </div>
     </div>
   </section>
+
+  <section class="split">
+    <div class="container split__grid">
+      <div class="split__col">
+        <span class="eyebrow">Il punto di partenza</span>
+        <h2>Guardare le cose <em class="accent-word">da un'altra parte</em>.</h2>
+        <p>
+          Non si tratta di trovare risposte pronte, ma di costruire insieme uno spazio in cui osservare
+          le proprie difficoltà da una prospettiva nuova.
+          <span class="placeholder-flag">testo segnaposto</span>
+        </p>
+      </div>
+      <div class="split__col" style="position:relative;">
+        <span class="split__watermark" aria-hidden="true">SGUARDO</span>
+        <span class="eyebrow">Cosa significa in pratica</span>
+        <h3>Uno spazio di ascolto, non un giudizio.</h3>
+        <p>
+          Ogni percorso nasce da un incontro conoscitivo, per capire insieme da dove partire e costruire
+          un percorso su misura, senza etichette e senza fretta.
+          <span class="placeholder-flag">testo segnaposto</span>
+        </p>
+        <div class="split__note">Non un lavoro affrettato. Un lavoro focalizzato.</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- STEPS -->
+  <section class="steps">
+    <div class="container">
+      <span class="eyebrow">Come lavoriamo insieme</span>
+      <h2 style="max-width: 34ch;">Il percorso, <em class="accent-word">passo dopo passo</em>.</h2>
+
+      <div class="steps__list">
+        <div class="step">
+          <span class="step__index">01</span>
+          <div>
+            <h3>Primo contatto</h3>
+            <p>Un breve scambio, telefonico o via email, per raccontare in poche parole cosa ti porta a cercare supporto.
+            <span class="placeholder-flag">testo segnaposto</span></p>
+          </div>
+        </div>
+        <div class="step">
+          <span class="step__index">02</span>
+          <div>
+            <h3>Colloquio conoscitivo</h3>
+            <p>Il primo incontro vero e proprio: ci conosciamo, definiamo insieme obiettivi e cornice del lavoro.
+            <span class="placeholder-flag">testo segnaposto</span></p>
+          </div>
+        </div>
+        <div class="step">
+          <span class="step__index">03</span>
+          <div>
+            <h3>Percorso condiviso</h3>
+            <p>Seduta dopo seduta, con verifiche periodiche per capire insieme se stiamo andando nella direzione giusta.
+            <span class="placeholder-flag">testo segnaposto</span></p>
+          </div>
+        </div>
+        <div class="step">
+          <span class="step__index">04</span>
+          <div>
+            <h3>Autonomia</h3>
+            <p>L'obiettivo non è dipendere dal percorso, ma acquisire strumenti da portare con sé anche dopo la sua conclusione.
+            <span class="placeholder-flag">testo segnaposto</span></p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section class="faq">
+    <div class="container">
+      <span class="eyebrow" style="justify-content:center; display:flex;">Domande frequenti</span>
+      <h2 style="text-align:center;">Le domande che mi fanno più spesso</h2>
+      <div class="faq__list">
+        <details class="faq-item" open>
+          <summary>Quanto dura un percorso?</summary>
+          <p>Dipende dalla situazione: si definisce insieme dopo i primi incontri, senza vincoli rigidi.
+          <span class="placeholder-flag">testo segnaposto</span></p>
+        </details>
+        <details class="faq-item">
+          <summary>Le sedute online sono efficaci quanto quelle in studio?</summary>
+          <p>Sì, per molte persone rappresentano una soluzione pratica senza compromettere la qualità dell'ascolto.
+          <span class="placeholder-flag">testo segnaposto</span></p>
+        </details>
+        <details class="faq-item">
+          <summary>Come si svolge il primo colloquio?</summary>
+          <p>È un momento di reciproca conoscenza, senza impegno a proseguire.
+          <span class="placeholder-flag">testo segnaposto</span></p>
+        </details>
+        <details class="faq-item">
+          <summary>Qual è il costo delle sedute?</summary>
+          <p>Le tariffe sono indicate in fase di primo contatto.
+          <span class="placeholder-flag">testo segnaposto</span></p>
+        </details>
+      </div>
+    </div>
+  </section>
+
+  <section class="cta-banner">
+    <div class="container cta-banner__row">
+      <h2>Pronta a fare il primo passo?</h2>
+      <a class="btn btn--ghost" href="contatti.html">Prenota un colloquio →</a>
+    </div>
+  </section>
+
 </main>
 
 <footer class="site-footer">
@@ -52,7 +164,7 @@
       <a href="index.html">Home</a>
       <a href="chi-sono.html">Chi sono</a>
       <a href="di-cosa-mi-occupo.html">Di cosa mi occupo</a>
-      <a href="il-mio-approccio.html" aria-current="page">Il mio approccio</a>
+      <a href="il-mio-approccio.html">Il mio approccio</a>
       <a href="contatti.html">Contatti</a>
     </nav>
     <div class="footer-legal">

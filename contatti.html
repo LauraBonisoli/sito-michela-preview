@@ -32,18 +32,82 @@
 </header>
 
 <main>
-  <section class="hero" style="padding-bottom: 3rem;">
-    <div class="container">
-      <span class="eyebrow">Contatti</span>
-      <h1 class="hero__title" style="font-size: clamp(2.2rem, 4vw, 3.2rem);">Contatti</h1>
-      <p style="max-width: 60ch; font-size: 1.05rem;">
-        Questa pagina è un segnaposto di struttura <span class="placeholder-flag">contenuto da definire</span> —
-        qui andrà il contenuto reale relativo a "Contatti", nello stesso stile della homepage
-        (titoli in Fraunces con parola in corsivo, testo in Inter, sezioni alternate chiaro/scuro).
-      </p>
-      <a class="btn btn--ghost" href="index.html">← Torna alla home</a>
+
+  <section class="page-hero" style="border-bottom:none; padding-bottom: 1rem;">
+    <div class="container page-hero__grid">
+      <div>
+        <span class="eyebrow">Contatti</span>
+        <h1>Fare il primo passo può bastare a <em class="accent-word">cambiare prospettiva</em>.</h1>
+        <p class="page-hero__lede">
+          Scrivimi per fissare un primo colloquio conoscitivo, in studio o online.
+          <span class="placeholder-flag">testo segnaposto</span>
+        </p>
+      </div>
+      <div class="page-hero__aside">
+        <strong>Prima di scrivere</strong>
+        <p style="margin:0;">Rispondo entro 24-48 ore lavorative. Per urgenze, ti consiglio di chiamare direttamente.</p>
+      </div>
     </div>
   </section>
+
+  <!-- CONTACT (stessa sezione della home) -->
+  <section class="contact" id="contatti" style="padding-top: 3rem;">
+    <div class="container">
+      <div style="text-align:center;">
+        <span class="eyebrow" style="justify-content:center;">Restiamo in contatto</span>
+      </div>
+      <h2 class="contact__title">Parliamone.</h2>
+      <p class="contact__lede">Compila il modulo qui sotto: ti risponderò appena possibile per fissare un primo colloquio.</p>
+
+      <div class="contact__info">
+        <div>
+          <h3>Dove ricevo</h3>
+          <p>Indirizzo dello studio <span class="placeholder-flag">da inserire</span></p>
+        </div>
+        <div>
+          <h3>Contatti</h3>
+          <p>Telefono e email <span class="placeholder-flag">da inserire</span></p>
+        </div>
+        <div>
+          <h3>Quando ricevo</h3>
+          <p>Su appuntamento · Disponibile anche online</p>
+        </div>
+      </div>
+
+      <form class="contact-form" onsubmit="return false;">
+        <div class="field"><label for="nome">Nome</label><input id="nome" type="text" placeholder="Il tuo nome"></div>
+        <div class="field"><label for="cognome">Cognome</label><input id="cognome" type="text" placeholder="Il tuo cognome"></div>
+        <div class="field"><label for="telefono">Telefono</label><input id="telefono" type="tel" placeholder="Il tuo numero"></div>
+        <div class="field"><label for="email">Email *</label><input id="email" type="email" required placeholder="La tua email"></div>
+        <div class="field field--full"><label for="messaggio">Messaggio</label><textarea id="messaggio" rows="3" placeholder="Scrivi qui il tuo messaggio"></textarea></div>
+        <label class="consent"><input type="checkbox" required> Dichiaro di aver letto l'<a href="#">Informativa Privacy</a> e presto il mio consenso al trattamento dei dati personali forniti tramite questo modulo.</label>
+        <button class="btn btn--on-dark" type="submit">Invia messaggio</button>
+      </form>
+
+      <div class="map-strip">Mappa dello studio <span class="placeholder-flag">da collegare</span></div>
+    </div>
+  </section>
+
+  <!-- FAQ breve -->
+  <section class="faq">
+    <div class="container">
+      <span class="eyebrow" style="justify-content:center; display:flex;">Prima di scrivere</span>
+      <h2 style="text-align:center;">Domande frequenti</h2>
+      <div class="faq__list">
+        <details class="faq-item" open>
+          <summary>Come si fissa il primo appuntamento?</summary>
+          <p>Tramite il modulo qui sopra, oppure telefonicamente: ci accordiamo insieme su data e modalità (studio o online).
+          <span class="placeholder-flag">testo segnaposto</span></p>
+        </details>
+        <details class="faq-item">
+          <summary>È possibile richiedere fattura?</summary>
+          <p>Sì, viene rilasciata regolare fattura per ogni seduta.
+          <span class="placeholder-flag">testo segnaposto</span></p>
+        </details>
+      </div>
+    </div>
+  </section>
+
 </main>
 
 <footer class="site-footer">
@@ -53,7 +117,7 @@
       <a href="chi-sono.html">Chi sono</a>
       <a href="di-cosa-mi-occupo.html">Di cosa mi occupo</a>
       <a href="il-mio-approccio.html">Il mio approccio</a>
-      <a href="contatti.html" aria-current="page">Contatti</a>
+      <a href="contatti.html">Contatti</a>
     </nav>
     <div class="footer-legal">
       <p>ISCRIZIONE ALL'ALBO: Ordine degli Psicologi del Veneto n. 13951 · P.IVA 05107280231</p>

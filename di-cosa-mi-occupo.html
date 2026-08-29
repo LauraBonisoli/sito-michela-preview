@@ -32,18 +32,93 @@
 </header>
 
 <main>
-  <section class="hero" style="padding-bottom: 3rem;">
-    <div class="container">
-      <span class="eyebrow">Di cosa mi occupo</span>
-      <h1 class="hero__title" style="font-size: clamp(2.2rem, 4vw, 3.2rem);">Di cosa mi occupo</h1>
-      <p style="max-width: 60ch; font-size: 1.05rem;">
-        Questa pagina è un segnaposto di struttura <span class="placeholder-flag">contenuto da definire</span> —
-        qui andrà il contenuto reale relativo a "Di cosa mi occupo", nello stesso stile della homepage
-        (titoli in Fraunces con parola in corsivo, testo in Inter, sezioni alternate chiaro/scuro).
-      </p>
-      <a class="btn btn--ghost" href="index.html">← Torna alla home</a>
+
+  <section class="page-hero">
+    <div class="container page-hero__grid">
+      <div>
+        <span class="eyebrow">Di cosa mi occupo</span>
+        <h1>Percorsi pensati per <em class="accent-word">situazioni</em>, persone e momenti diversi.</h1>
+        <p class="page-hero__lede">
+          Una panoramica degli ambiti in cui posso accompagnarti, individualmente o in coppia, in studio o online.
+          <span class="placeholder-flag">testo segnaposto</span>
+        </p>
+      </div>
+      <div class="page-hero__aside">
+        <strong>Non trovi quello che cerchi?</strong>
+        <p style="margin:0;">Scrivimi comunque: valutiamo insieme in un primo colloquio conoscitivo qual è il percorso più adatto.</p>
+      </div>
     </div>
   </section>
+
+  <section class="services">
+    <div class="container">
+      <span class="eyebrow">Aree di intervento</span>
+      <h2 style="max-width: 30ch;">Ogni percorso parte da <em class="accent-word">un ascolto</em>, non da un'etichetta.</h2>
+
+      <div class="services__grid">
+        <div class="service-card" id="individuale">
+          <span class="service-card__tag">Individuale</span>
+          <div class="service-card__ring">1</div>
+          <h3>Percorsi individuali</h3>
+          <p>Ansia, stress, momenti di transizione, difficoltà relazionali o di autostima: uno spazio dedicato a te.
+          <span class="placeholder-flag">testo segnaposto</span></p>
+        </div>
+        <div class="service-card" id="coppia">
+          <span class="service-card__tag">Coppia</span>
+          <div class="service-card__ring">2</div>
+          <h3>Percorsi di coppia</h3>
+          <p>Uno spazio protetto per affrontare insieme incomprensioni, crisi o momenti di cambiamento nella relazione.
+          <span class="placeholder-flag">testo segnaposto</span></p>
+        </div>
+        <div class="service-card">
+          <span class="service-card__tag">Adolescenti</span>
+          <div class="service-card__ring">3</div>
+          <h3>Adolescenti e giovani adulti</h3>
+          <p>Supporto nei momenti di crescita, orientamento e costruzione dell'identità.
+          <span class="placeholder-flag">testo segnaposto</span></p>
+        </div>
+        <div class="service-card" id="online">
+          <span class="service-card__tag">Online</span>
+          <div class="service-card__ring">4</div>
+          <h3>Sedute online</h3>
+          <p>Stessa qualità di ascolto, comodamente da dove ti trovi: per chi ha poco tempo o vive lontano dallo studio.
+          <span class="placeholder-flag">testo segnaposto</span></p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="split split--alt">
+    <div class="container split__grid">
+      <div class="split__col">
+        <span class="eyebrow">Per chi è pensato</span>
+        <h2>Non serve una <em class="accent-word">diagnosi</em> per iniziare.</h2>
+        <p>
+          Molte persone arrivano in studio semplicemente perché sentono che qualcosa non va, senza saperlo
+          definire con precisione. È normale, ed è proprio da lì che si parte.
+          <span class="placeholder-flag">testo segnaposto</span>
+        </p>
+      </div>
+      <div class="split__col">
+        <span class="eyebrow">Come iniziare</span>
+        <h3>Un primo colloquio conoscitivo</h3>
+        <p>
+          Il primo incontro serve a capire insieme il motivo della richiesta e a definire, se utile,
+          gli obiettivi del percorso.
+          <span class="placeholder-flag">testo segnaposto</span>
+        </p>
+        <div class="split__note">Nessuna formula uguale per tutti.</div>
+      </div>
+    </div>
+  </section>
+
+  <section class="cta-banner">
+    <div class="container cta-banner__row">
+      <h2>Hai dubbi su quale percorso fa per te?</h2>
+      <a class="btn btn--ghost" href="contatti.html">Scrivimi →</a>
+    </div>
+  </section>
+
 </main>
 
 <footer class="site-footer">
@@ -51,7 +126,7 @@
     <nav class="footer-nav" aria-label="Menu footer">
       <a href="index.html">Home</a>
       <a href="chi-sono.html">Chi sono</a>
-      <a href="di-cosa-mi-occupo.html" aria-current="page">Di cosa mi occupo</a>
+      <a href="di-cosa-mi-occupo.html">Di cosa mi occupo</a>
       <a href="il-mio-approccio.html">Il mio approccio</a>
       <a href="contatti.html">Contatti</a>
     </nav>
