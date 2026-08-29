@@ -665,5 +665,87 @@ p { margin: 0 0 1rem; color: var(--ink-soft); }
   .split__watermark { display: none; }
   .contact__info { gap: 2.4rem; }
   .contact-form { grid-template-columns: 1fr; }
-  .cta-banner__row { flex-direction: column; align-items: flex-start; }
+  .cta-banner__row { flex-direction: column; align-items: center; text-align: center; }
+
+  /* Centra il contenuto quando le colonne vanno in stack */
+  .hero__content,
+  .split__col,
+  .values__intro,
+  .page-hero > .container > div,
+  .bio__col,
+  .service-card,
+  .step,
+  .newsletter,
+  .newsletter-form,
+  .footer-legal {
+    text-align: center;
+  }
+
+  .hero__grid,
+  .hero__content,
+  .split__grid,
+  .page-hero__grid,
+  .bio__grid,
+  .newsletter {
+    justify-items: center;
+  }
+
+  .hero__photo-wrap,
+  .bio__photo {
+    margin: 0 auto;
+  }
+
+  .eyebrow,
+  .hero__byline,
+  .split__note,
+  .values__intro p,
+  .page-hero__lede,
+  .bio__facts,
+  .newsletter-form .field-row,
+  .newsletter-form .gdpr {
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .hero__lede,
+  .page-hero__lede,
+  .values__intro p,
+  .split__col p {
+    max-width: 46ch;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .bio__facts li { justify-content: center; }
+
+  .step { text-align: center; }
+  .step__index { margin: 0 auto; }
+
+  .page-hero__aside {
+    text-align: center;
+    max-width: 46ch;
+    margin: 0 auto;
+  }
+
+  .cta-banner .btn { align-self: center; }
+
+  .footer-nav, .footer-sub { justify-content: center; text-align: center; }
+
+  .value-card__ring,
+  .service-card__ring,
+  .hero__badge,
+  .step__index {
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .hero__byline { flex-direction: column; gap: .5rem; }
+  .service-card__tag { position: static; display: block; margin-bottom: .6rem; }
+}
+
+@media (max-width: 480px) {
+  .container { padding: 0 1.25rem; }
+  .hero { padding: 3rem 0 3.5rem; }
+  .split, .values, .services, .steps, .faq, .bio { padding: 3rem 0; }
+  .contact { padding: 4rem 0 3rem; }
 }
