@@ -74,7 +74,7 @@
   </section>
 
   <!-- CONTACT (stessa sezione della home) -->
-  <section class="contact" id="contatti" style="padding-top: 3rem;">
+  <section class="contact contact--light" id="contatti" style="padding-top: 3rem;">
     <div class="container">
       <div style="text-align:center;">
         <span class="eyebrow" style="justify-content:center;">Restiamo in contatto</span>
@@ -85,7 +85,7 @@
       <div class="contact__info">
         <div>
           <h3>Dove ricevo</h3>
-          <p>Indirizzo dello studio <span class="placeholder-flag">da inserire</span></p>
+          <p>Studio Valpomed, Sant’Ambrogio di Valpolicella (VR)<br>Studio Atletalab, Stallavena (VR)</p>
         </div>
         <div>
           <h3>Contatti</h3>
@@ -103,11 +103,20 @@
         <div class="field"><label for="telefono">Telefono</label><input id="telefono" type="tel" placeholder="Il tuo numero"></div>
         <div class="field"><label for="email">Email *</label><input id="email" type="email" required placeholder="La tua email"></div>
         <div class="field field--full"><label for="messaggio">Messaggio</label><textarea id="messaggio" rows="3" placeholder="Scrivi qui il tuo messaggio"></textarea></div>
-        <label class="consent"><input type="checkbox" required> Dichiaro di aver letto l'<a href="#">Informativa Privacy</a> e presto il mio consenso al trattamento dei dati personali forniti tramite questo modulo.</label>
+        <label class="consent"><input type="checkbox" required><span>Dichiaro di aver letto l'<a href="#">Informativa Privacy</a> e presto il mio consenso al trattamento dei dati personali forniti tramite questo modulo.</span></label>
         <button class="btn btn--on-dark" type="submit">Invia messaggio</button>
       </form>
 
-      <div class="map-strip">Mappa dello studio <span class="placeholder-flag">da collegare</span></div>
+      <div class="map-grid">
+        <div class="map-embed">
+          <iframe src="https://www.google.com/maps?q=Case+Sparse+Pigna+15,+37015+Sant'Ambrogio+di+Valpolicella+VR&output=embed" loading="lazy" referrerpolicy="no-referrer-when-downgrade" title="Mappa Studio Valpomed"></iframe>
+          <p class="map-embed__caption">Studio Valpomed &mdash; Via Case Sparse Pigna 15, Sant&rsquo;Ambrogio di Valpolicella (VR)</p>
+        </div>
+        <div class="map-embed">
+          <iframe src="https://www.google.com/maps?q=Via+Tinazzi+2,+37023+Stallavena+VR&output=embed" loading="lazy" referrerpolicy="no-referrer-when-downgrade" title="Mappa Studio Atletalab"></iframe>
+          <p class="map-embed__caption">Studio Atletalab &mdash; Via Tinazzi 2, Stallavena (VR)</p>
+        </div>
+      </div>
 
       <div class="footer-legal footer-legal--in-contact">
         <p>ISCRIZIONE ALL'ALBO: Ordine degli Psicologi del Veneto n. 13951 · P.IVA 05107280231</p>
