@@ -139,6 +139,13 @@ p { margin: 0 0 1rem; color: var(--ink-soft); }
   font-size: .95rem;
   font-style: italic;
 }
+.logo__badge {
+  width: 46px;
+  height: 46px;
+  object-fit: contain;
+  mix-blend-mode: multiply;
+  flex-shrink: 0;
+}
 .main-nav { display: flex; gap: 2.1rem; }
 .main-nav a {
   font-size: .92rem;
@@ -153,15 +160,24 @@ p { margin: 0 0 1rem; color: var(--ink-soft); }
   position: absolute;
   right: 1.75rem;
   display: flex;
-  gap: .9rem;
+  gap: .7rem;
 }
 .socials a {
-  width: 32px; height: 32px;
+  width: 34px; height: 34px;
   border-radius: 50%;
   border: 1px solid var(--line);
   display: flex; align-items: center; justify-content: center;
+  color: var(--accent);
+  transition: background .18s ease, color .18s ease, border-color .18s ease;
 }
-.socials a:hover { border-color: var(--accent); color: var(--accent); }
+.socials a svg { width: 16px; height: 16px; }
+.socials__glyph {
+  font-family: var(--serif);
+  font-style: italic;
+  font-size: .85rem;
+  line-height: 1;
+}
+.socials a:hover { background: var(--accent); border-color: var(--accent); color: var(--bg); }
 
 .sub-nav {
   border-top: 1px solid var(--line);

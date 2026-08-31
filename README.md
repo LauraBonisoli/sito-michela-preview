@@ -35,5 +35,5 @@ ma vanno riempite pagina per pagina con i contenuti veri.
 ## File
 
 - `index.html` — homepage completa
-- `chi-sono.html`, `di-cosa-mi-occupo.html`, `il-mio-approccio.html`, `contatti.html` — stub
-- `css/styles.css` — tutto lo stile del sito
+- `chi-sono.html`, `di-cosa-mi-occupo.html`, `il-mio-approccio.html`, `contatti.html` — pagine interne
+- `styles.css` — tutto lo stile del sito (nella root, non in una sottocartella)
