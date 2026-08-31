@@ -8,9 +8,9 @@
   --bg-alt: #E9E4D8;
   --ink: #22282A;
   --ink-soft: #55605F;
-  --accent: #3C5A6B;      /* blu-petrolio: chiarezza, nuovo sguardo */
-  --accent-soft: #A9C0C9;
-  --terracotta: #B5654B;  /* accento caldo, uso mirato */
+  --accent: #6C5B8C;      /* lilla profondo: chiarezza, nuovo sguardo */
+  --accent-soft: #CBB8DA;
+  --terracotta: #A8729C;  /* lilla-malva, accento caldo, uso mirato */
   --dark: #1B2A2E;
   --dark-text: #F2F0EA;
   --line: rgba(34,40,42,0.14);
@@ -91,7 +91,7 @@ p { margin: 0 0 1rem; color: var(--ink-soft); }
   border: 1px solid var(--accent);
   transition: transform .18s ease, background .18s ease;
 }
-.btn:hover { background: #2f4855; transform: translateY(-1px); }
+.btn:hover { background: #55446F; transform: translateY(-1px); }
 .btn--ghost {
   background: transparent;
   color: var(--ink);
@@ -99,7 +99,7 @@ p { margin: 0 0 1rem; color: var(--ink-soft); }
 }
 .btn--ghost:hover { background: var(--ink); color: var(--bg); border-color: var(--ink); }
 .btn--on-dark { background: var(--terracotta); border-color: var(--terracotta); }
-.btn--on-dark:hover { background: #9a5540; }
+.btn--on-dark:hover { background: #86577B; }
 
 /* ---------- Header ---------- */
 .site-header {
@@ -184,9 +184,9 @@ p { margin: 0 0 1rem; color: var(--ink-soft); }
   border-radius: 9px;
   color: var(--bg) !important;
 }
-.social--filled:hover { background: #2f4855; border-color: #2f4855; }
+.social--filled:hover { background: #55446F; border-color: #55446F; }
 .social--filled-alt { background: var(--terracotta); border-color: var(--terracotta); }
-.social--filled-alt:hover { background: #9a5540; border-color: #9a5540; }
+.social--filled-alt:hover { background: #86577B; border-color: #86577B; }
 .socials__glyph--linkedin {
   font-family: var(--sans);
   font-style: normal;
