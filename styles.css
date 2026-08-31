@@ -323,12 +323,19 @@ p { margin: 0 0 1rem; color: var(--ink-soft); }
   border-top: 1px solid var(--line);
   padding-top: 3rem;
 }
+.value-card {
+  display: flex;
+  align-items: flex-start;
+  gap: 1.1rem;
+}
 .value-card__ring {
   width: 28px; height: 28px;
   border-radius: 50%;
   border: 1px solid var(--accent);
-  margin-bottom: 1.4rem;
+  flex-shrink: 0;
+  margin-top: .2rem;
 }
+.value-card__body { min-width: 0; }
 .value-card h3 { font-size: 1.4rem; margin-bottom: .8rem; }
 .value-card p { font-size: .95rem; margin: 0; }
 
@@ -748,13 +755,13 @@ p { margin: 0 0 1rem; color: var(--ink-soft); }
 
   .footer-nav, .footer-sub { justify-content: center; text-align: center; }
 
-  .value-card__ring,
   .service-card__ring,
   .hero__badge,
   .step__index {
     margin-left: auto;
     margin-right: auto;
   }
+  .value-card { text-align: left; }
   .hero__byline { flex-direction: column; gap: .5rem; }
   .service-card__tag { position: static; display: block; margin-bottom: .6rem; }
 }
