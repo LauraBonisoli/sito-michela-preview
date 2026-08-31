@@ -233,6 +233,7 @@ p { margin: 0 0 1rem; color: var(--ink-soft); }
 /* ---------- Hero ---------- */
 .hero {
   padding: 4.5rem 0 5rem;
+  background: var(--bg-alt);
 }
 .hero__grid {
   display: grid;
@@ -518,6 +519,11 @@ p { margin: 0 0 1rem; color: var(--ink-soft); }
   line-height: 1.9;
 }
 .footer-legal a { text-decoration: underline; }
+.footer-legal--in-contact {
+  margin-top: 3rem;
+  padding-top: 2rem;
+  border-top: 1px solid rgba(34,40,42,0.12);
+}
 
 .placeholder-flag {
   display: inline-block;
@@ -539,6 +545,7 @@ p { margin: 0 0 1rem; color: var(--ink-soft); }
 .page-hero {
   padding: 4rem 0 3.5rem;
   border-bottom: 1px solid var(--line);
+  background: var(--bg-alt);
 }
 .page-hero__grid {
   display: grid;
