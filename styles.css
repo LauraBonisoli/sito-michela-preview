@@ -385,6 +385,17 @@ p { margin: 0 0 1rem; color: var(--ink-soft); }
 }
 .values__intro h2 { font-size: clamp(1.8rem, 3vw, 2.4rem); max-width: 40ch; }
 .values__intro p { font-size: 1.02rem; margin: .75rem 0 0; max-width: 60ch; }
+.values__keywords {
+  display: flex;
+  gap: 1.25rem;
+  flex-wrap: wrap;
+  margin-top: 1rem;
+
+  font-family: var(--serif);
+  font-size: clamp(1.5rem, 2.5vw, 2.1rem);
+  font-style: italic;
+  color: var(--accent);
+}
 .values__grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
