@@ -385,15 +385,19 @@ p { margin: 0 0 1rem; color: var(--ink-soft); }
 }
 .values__intro h2 { font-size: clamp(1.8rem, 3vw, 2.4rem); max-width: 40ch; }
 .values__intro p { font-size: 1.02rem; margin: .75rem 0 0; max-width: 60ch; }
-.values__keywords {
+.values__tagline {
   display: flex;
-  gap: 1.25rem;
+  align-items: baseline;
+  gap: .65rem;
   flex-wrap: wrap;
-  margin-top: 1rem;
+  max-width: none;
+}
 
+.values__keywords {
   font-family: var(--serif);
-  font-size: clamp(1.5rem, 2.5vw, 2.1rem);
+  font-size: 1.15rem;
   font-style: italic;
+  font-weight: 600;
   color: var(--accent);
 }
 .values__grid {
@@ -722,7 +726,11 @@ p { margin: 0 0 1rem; color: var(--ink-soft); }
 .bio__facts li {
   display: flex;
   gap: .8rem;
-  font-size: .95rem;
+  font-family: var(--sans);
+  font-size: 1.02rem;
+  font-weight: 400;
+  line-height: 1.6;
+  color: var(--ink-soft);
   align-items: baseline;
 }
 .bio__facts li::before {
