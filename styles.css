@@ -370,7 +370,7 @@ p { margin: 0 0 1rem; color: var(--ink-soft); }
   border-bottom: 1px solid var(--line);
 }
 .split__closing {
-  margin-top: 2rem;
+  margin-top: 2.5rem;
 
   font-size: 1.02rem;
   font-weight: 400;
