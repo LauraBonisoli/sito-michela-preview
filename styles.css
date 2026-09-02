@@ -921,7 +921,10 @@ p { margin: 0 0 1rem; color: var(--ink-soft); }
     margin-right: auto;
   }
 
-  .bio__facts li { justify-content: center; }
+  .bio__facts li {
+     justify-content: flex-start;
+     text-align: left;
+   }
 
   .step { text-align: center; }
   .step__index { margin: 0 auto; }
@@ -943,6 +946,14 @@ p { margin: 0 0 1rem; color: var(--ink-soft); }
   }
   .value-card { text-align: left; }
   .service-card__tag { position: static; display: block; margin-bottom: .6rem; }
+   /* Testi lunghi su mobile */
+   .bio__col p {
+     text-align: justify;
+     text-align-last: left;
+     hyphens: auto;
+     -webkit-hyphens: auto;
+     overflow-wrap: break-word;
+   }
 }
 
 @media (max-width: 480px) {
@@ -950,4 +961,6 @@ p { margin: 0 0 1rem; color: var(--ink-soft); }
   .hero-split__content { padding: 2.5rem 1.5rem; }
   .split, .values, .services, .steps, .faq, .bio { padding: 3rem 0; }
   .contact { padding: 4rem 0 3rem; }
+
+   
 }
