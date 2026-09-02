@@ -886,7 +886,7 @@ p { margin: 0 0 1rem; color: var(--ink-soft); }
   .newsletter,
   .newsletter-form,
   .footer-legal {
-    text-align: center;
+    text-align: left;
   }
 
   .split__grid,
@@ -946,14 +946,41 @@ p { margin: 0 0 1rem; color: var(--ink-soft); }
   }
   .value-card { text-align: left; }
   .service-card__tag { position: static; display: block; margin-bottom: .6rem; }
-   /* Testi lunghi su mobile */
-   .bio__col p {
-     text-align: justify;
-     text-align-last: left;
-     hyphens: auto;
-     -webkit-hyphens: auto;
-     overflow-wrap: break-word;
-   }
+
+   /* Allineamento a sinistra su mobile */
+.eyebrow,
+.split__note,
+.values__intro p,
+.page-hero__lede,
+.bio__facts,
+.newsletter-form .field-row,
+.newsletter-form .gdpr {
+  justify-content: flex-start;
+  margin-left: 0;
+  margin-right: 0;
+}
+
+.page-hero__lede,
+.values__intro p,
+.split__col p {
+  margin-left: 0;
+  margin-right: 0;
+}
+
+.bio__facts li {
+  justify-content: flex-start;
+  text-align: left;
+}
+
+.step {
+  text-align: left;
+}
+
+.page-hero__aside {
+  text-align: left;
+  margin-left: 0;
+  margin-right: 0;
+}
 }
 
 @media (max-width: 480px) {
