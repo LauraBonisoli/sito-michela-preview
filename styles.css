@@ -384,12 +384,14 @@ p { margin: 0 0 1rem; color: var(--ink-soft); }
   margin-bottom: 3.5rem;
 }
 .values__intro h2 { font-size: clamp(1.8rem, 3vw, 2.4rem); max-width: 40ch; }
-.values__intro p { font-size: 1.02rem; margin: .75rem 0 0; max-width: 60ch; }
-.values__tagline {
-  display: flex;
-  align-items: baseline;
-  gap: .65rem;
-  flex-wrap: wrap;
+.values__intro p {
+  font-size: 1.02rem;
+  margin: .75rem 0 0;
+  max-width: 60ch;
+}
+
+/* Eccezione per la riga con Ascolto, Chiarezza, Concretezza */
+.values__intro .values__tagline {
   max-width: none;
 }
 
