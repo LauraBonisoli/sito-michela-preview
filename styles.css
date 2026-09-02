@@ -365,6 +365,28 @@ p { margin: 0 0 1rem; color: var(--ink-soft); }
   letter-spacing: .02em;
 }
 .split__note::before { content: "—"; color: var(--terracotta); }
+/* Home — sezione "Il mio approccio" */
+.split--home-approach {
+  border-bottom: 1px solid var(--line);
+}
+
+.split--home-approach .split__grid {
+  align-items: stretch;
+}
+
+.split__col--meaning {
+  display: flex;
+  flex-direction: column;
+}
+
+.split__closing {
+  margin-top: auto;
+
+  font-size: 1.02rem;
+  font-weight: 400;
+  line-height: 1.6;
+  color: var(--ink-soft);
+}
 
 /* ---------- Three-up value section ---------- */
 .values { padding: 5rem 0; }
