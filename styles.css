@@ -369,18 +369,8 @@ p { margin: 0 0 1rem; color: var(--ink-soft); }
 .split--home-approach {
   border-bottom: 1px solid var(--line);
 }
-
-.split--home-approach .split__grid {
-  align-items: stretch;
-}
-
-.split__col--meaning {
-  display: flex;
-  flex-direction: column;
-}
-
 .split__closing {
-  margin-top: auto;
+  margin-top: 2rem;
 
   font-size: 1.02rem;
   font-weight: 400;
