@@ -1254,26 +1254,43 @@ p { margin: 0 0 1rem; color: var(--ink-soft); }
   .steps__heading .eyebrow { margin-bottom: 1rem; }
 
   .steps-flow {
-    grid-template-columns: 1fr;
-    gap: 3rem;
-    margin-top: 2.5rem;
-  }
+  grid-template-columns: 1fr;
+  gap: 3rem;
+  margin-top: 2.5rem;
+}
 
-  .steps-flow::before { display: none; }
+.steps-flow::before {
+  display: none;
+}
 
-  .steps-flow__item {
-    padding: 0;
-    text-align: left;
-  }
+.steps-flow__item {
+  position: relative;
+  padding: 0;
+  text-align: left;
+}
 
-  .steps-flow__item:not(:last-child)::after { display: none; }
+.steps-flow__item:not(:last-child)::after {
+  display: none;
+}
 
-  .steps-flow__number {
-    margin-left: 0;
-    margin-right: auto;
-    margin-bottom: 1.25rem;
-  }
+.steps-flow__number {
+  position: relative;
+  margin-left: 0;
+  margin-right: 0;
+  margin-bottom: 1.25rem;
+}
 
+/* Linea orizzontale che parte dal cerchio */
+.steps-flow__number::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: calc(100% + 1rem);
+  width: calc(100vw - 100% - 5.5rem);
+  height: 1px;
+  background: var(--line);
+  transform: translateY(-50%);
+}
   .steps-flow__icon {
     margin-left: 0;
     margin-bottom: 1.25rem;
