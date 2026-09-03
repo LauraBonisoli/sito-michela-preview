@@ -845,19 +845,17 @@ p { margin: 0 0 1rem; color: var(--ink-soft); }
 }
 
 .steps__heading {
-  display: flex;
-  align-items: baseline;
-  gap: 2rem;
-  flex-wrap: wrap;
+  display: block;
 }
 
 .steps__heading .eyebrow {
-  margin-bottom: 0;
+  margin-bottom: 1rem;
 }
 
 .steps__heading h2 {
-  font-size: clamp(1.8rem, 3vw, 2.4rem);
   margin: 0;
+  text-align: left;
+  font-size: clamp(1.8rem, 3vw, 2.4rem);
 }
 
 .steps-flow {
