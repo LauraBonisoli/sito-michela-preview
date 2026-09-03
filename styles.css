@@ -855,6 +855,129 @@ p { margin: 0 0 1rem; color: var(--ink-soft); }
 .step h3 { font-size: 1.4rem; margin-bottom: .6rem; }
 .step p { font-size: 1rem; margin: 0; max-width: 56ch; }
 
+/* ==========================================================================
+   Il mio approccio
+   ========================================================================== */
+
+/* Introduzione */
+.approach-intro {
+  background: var(--bg);
+}
+
+
+/* Modello cognitivo-comportamentale */
+.approach-model {
+  padding: 5rem 0;
+  background: var(--bg-alt);
+  border-top: 1px solid var(--line);
+  border-bottom: 1px solid var(--line);
+}
+
+.approach-model__intro {
+  max-width: 760px;
+  margin-bottom: 3.5rem;
+}
+
+.approach-model__intro h2 {
+  font-size: clamp(1.8rem, 3vw, 2.4rem);
+  max-width: 34ch;
+}
+
+.approach-model__intro p {
+  font-size: 1.02rem;
+  max-width: 66ch;
+}
+
+.approach-model__grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2.5rem;
+}
+
+.approach-card {
+  position: relative;
+  padding: 2.4rem;
+  background: var(--bg);
+  border-radius: 1.25rem;
+}
+
+.approach-card__number {
+  width: 40px;
+  height: 40px;
+  border: 1px solid var(--accent);
+  border-radius: 50%;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  margin-bottom: 1.4rem;
+
+  font-family: var(--serif);
+  font-style: italic;
+  color: var(--accent);
+}
+
+.approach-card h3 {
+  font-size: 1.4rem;
+  margin-bottom: .8rem;
+}
+
+.approach-card p {
+  font-size: .98rem;
+}
+
+.approach-card__closing {
+  margin-top: 1.5rem !important;
+  padding-top: 1.25rem;
+  border-top: 1px solid var(--line);
+  font-size: .9rem !important;
+  font-weight: 500;
+}
+
+
+/* Step */
+.approach-steps {
+  background: var(--bg);
+}
+
+
+/* Blocco finale sull'autonomia */
+.approach-focus {
+  padding: 5rem 0;
+  background: var(--bg-alt);
+  border-top: 1px solid var(--line);
+  border-bottom: 1px solid var(--line);
+}
+
+.approach-focus__grid {
+  display: grid;
+  grid-template-columns: .85fr 1.15fr;
+  gap: 4rem;
+  align-items: start;
+}
+
+.approach-focus h2 {
+  font-size: clamp(1.8rem, 3vw, 2.4rem);
+  max-width: 18ch;
+}
+
+.approach-focus p {
+  font-size: 1.02rem;
+  max-width: 58ch;
+}
+
+
+/* FAQ: titolo centrato su desktop */
+.faq__eyebrow {
+  display: flex;
+  justify-content: center;
+}
+
+.faq__title {
+  text-align: center;
+}
+
 /* FAQ */
 .faq { padding: 5rem 0; border-top: 1px solid var(--line); }
 .faq__list { max-width: 780px; margin: 3rem auto 0; }
@@ -1036,12 +1159,44 @@ p { margin: 0 0 1rem; color: var(--ink-soft); }
   margin-left: 0;
   margin-right: 0;
 }
+   .approach-model__grid,
+.approach-focus__grid {
+  grid-template-columns: 1fr;
+}
+
+.approach-model__intro,
+.approach-card,
+.approach-focus__grid {
+  text-align: left;
+}
+
+.approach-card__number {
+  margin-left: 0;
+  margin-right: auto;
+}
+
+.faq__eyebrow {
+  justify-content: flex-start;
+}
+
+.faq__title {
+  text-align: left;
+}
 }
 
 @media (max-width: 480px) {
   .container { padding: 0 1.25rem; }
   .hero-split__content { padding: 2.5rem 1.5rem; }
-  .split, .values, .services, .steps, .faq, .bio { padding: 3rem 0; }
+  .split,
+   .values,
+   .services,
+   .steps,
+   .faq,
+   .bio,
+   .approach-model,
+   .approach-focus {
+     padding: 3rem 0;
+   }
   .contact { padding: 4rem 0 3rem; }
 
    
