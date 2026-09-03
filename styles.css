@@ -855,6 +855,120 @@ p { margin: 0 0 1rem; color: var(--ink-soft); }
 .step h3 { font-size: 1.4rem; margin-bottom: .6rem; }
 .step p { font-size: 1rem; margin: 0; max-width: 56ch; }
 
+/* Percorso orizzontale */
+.steps__heading {
+  display: flex;
+  align-items: baseline;
+  gap: 2rem;
+  flex-wrap: wrap;
+}
+
+.steps__heading .eyebrow {
+  margin-bottom: 0;
+}
+
+.steps__heading h2 {
+  font-size: clamp(1.8rem, 3vw, 2.4rem);
+  margin: 0;
+}
+
+
+/* Griglia dei 4 passaggi */
+.steps-flow {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  margin-top: 3.5rem;
+  position: relative;
+}
+
+
+/* Linea che collega i numeri */
+.steps-flow::before {
+  content: "";
+  position: absolute;
+  top: 21px;
+  left: 5%;
+  right: 5%;
+  height: 1px;
+  background: var(--line);
+  z-index: 0;
+}
+
+
+.steps-flow__item {
+  position: relative;
+  padding: 0 2rem;
+  min-width: 0;
+}
+
+
+/* Separatori verticali */
+.steps-flow__item:not(:last-child)::after {
+  content: "";
+  position: absolute;
+  right: 0;
+  top: 8.5rem;
+  bottom: 0;
+  width: 1px;
+  background: var(--line);
+}
+
+
+/* Numero */
+.steps-flow__number {
+  position: relative;
+  z-index: 1;
+
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  border: 1px solid var(--accent);
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  margin-bottom: 2rem;
+
+  background: var(--bg);
+
+  font-family: var(--serif);
+  font-style: italic;
+  font-size: .95rem;
+  color: var(--accent);
+}
+
+
+/* Icona */
+.steps-flow__icon {
+  width: 48px;
+  height: 48px;
+  margin-bottom: 1.6rem;
+  color: var(--ink-soft);
+}
+
+.steps-flow__icon svg {
+  width: 100%;
+  height: 100%;
+}
+
+
+/* Testi */
+.steps-flow__item h3 {
+  font-family: var(--sans);
+  font-size: .95rem;
+  font-weight: 600;
+  line-height: 1.4;
+  margin-bottom: 1rem;
+}
+
+.steps-flow__item p {
+  font-size: .92rem;
+  line-height: 1.7;
+  margin: 0;
+  max-width: 25ch;
+}
+
 /* ==========================================================================
    Il mio approccio
    ========================================================================== */
