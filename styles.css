@@ -805,7 +805,7 @@ p { margin: 0 0 1rem; color: var(--ink-soft); }
 
 /* Sedi e modalità delle sedute */
 .service-card__locations {
-  margin-top: 2rem;
+  margin-top: 1.5rem;
 }
 
 .service-card__locations > strong {
@@ -816,7 +816,7 @@ p { margin: 0 0 1rem; color: var(--ink-soft); }
 }
 
 .service-card__locations .service-card__list {
-  margin-bottom: 1.75rem;
+  margin-bottom: 1.25rem;
 }
 
 .service-card__locations > p {
