@@ -802,6 +802,26 @@ p { margin: 0 0 1rem; color: var(--ink-soft); }
   color: var(--ink);
   font-weight: 600;
 }
+
+/* Sedi e modalità delle sedute */
+.service-card__locations {
+  margin-top: 2rem;
+}
+
+.service-card__locations > strong {
+  display: block;
+  margin-bottom: .65rem;
+  color: var(--ink);
+  font-weight: 600;
+}
+
+.service-card__locations .service-card__list {
+  margin-bottom: 1.75rem;
+}
+
+.service-card__locations > p {
+  margin: 0;
+}
 .service-card__tag {
   position: absolute;
   top: 2.2rem; right: 2.2rem;
@@ -975,6 +995,10 @@ p { margin: 0 0 1rem; color: var(--ink-soft); }
     margin-left: auto;
     margin-right: auto;
   }
+   .service-card__ring {
+  margin-left: 0;
+  margin-right: auto;
+}
   .value-card { text-align: left; }
   .service-card__tag { position: static; display: block; margin-bottom: .6rem; }
 
