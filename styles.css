@@ -1338,3 +1338,504 @@ p { margin: 0 0 1rem; color: var(--ink-soft); }
 
   .contact { padding: 4rem 0 3rem; }
 }
+
+/* ==========================================================================
+   PAGINA CONTATTI
+   ========================================================================== */
+
+.contact-page {
+  background: var(--accent-dark);
+  color: var(--paper);
+  padding: 5.5rem 0 4rem;
+}
+
+
+/* --------------------------------------------------------------------------
+   Intro
+   -------------------------------------------------------------------------- */
+
+.contact-intro {
+  max-width: 720px;
+  margin-bottom: 3rem;
+}
+
+.contact-eyebrow {
+  color: rgba(255, 255, 255, .75);
+}
+
+.contact-eyebrow::before {
+  background: rgba(255, 255, 255, .65);
+}
+
+.contact-intro h1 {
+  margin: 1rem 0 .9rem;
+
+  color: var(--paper);
+
+  font-family: var(--serif);
+  font-size: clamp(3rem, 5vw, 4.8rem);
+  line-height: 1;
+}
+
+.contact-intro h1 em {
+  color: var(--accent-light);
+  font-weight: 500;
+}
+
+.contact-intro p {
+  max-width: 620px;
+  margin: 0;
+
+  color: rgba(255, 255, 255, .76);
+
+  font-size: 1.05rem;
+  line-height: 1.7;
+}
+
+
+/* --------------------------------------------------------------------------
+   Fascia informazioni
+   -------------------------------------------------------------------------- */
+
+.contact-info {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+
+  margin-bottom: 4rem;
+
+  background: var(--paper);
+  color: var(--ink);
+
+  border-radius: 1.4rem;
+  overflow: hidden;
+}
+
+.contact-info__item {
+  display: flex;
+  align-items: flex-start;
+  gap: 1.2rem;
+
+  padding: 2rem;
+}
+
+.contact-info__item + .contact-info__item {
+  border-left: 1px solid var(--line);
+}
+
+.contact-info__icon {
+  width: 46px;
+  height: 46px;
+  flex: 0 0 46px;
+
+  display: grid;
+  place-items: center;
+
+  border: 1px solid var(--accent);
+  border-radius: 50%;
+
+  color: var(--accent);
+}
+
+.contact-info__icon svg {
+  width: 21px;
+  height: 21px;
+}
+
+.contact-info__label,
+.contact-form-title {
+  display: block;
+
+  margin-bottom: .75rem;
+
+  color: var(--accent);
+
+  font-size: .76rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: .16em;
+}
+
+.contact-info p {
+  margin: 0;
+
+  color: var(--ink-soft);
+
+  font-size: .9rem;
+  line-height: 1.6;
+}
+
+
+/* --------------------------------------------------------------------------
+   Form + frase laterale
+   -------------------------------------------------------------------------- */
+
+.contact-main {
+  display: grid;
+  grid-template-columns: minmax(0, 2fr) minmax(250px, .85fr);
+  gap: 4rem;
+  align-items: stretch;
+}
+
+.contact-form-title {
+  margin-bottom: 1.5rem;
+  color: rgba(255, 255, 255, .78);
+}
+
+
+/* --------------------------------------------------------------------------
+   Form
+   -------------------------------------------------------------------------- */
+
+.contact-form__grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1.8rem 2rem;
+}
+
+.contact-field label {
+  display: block;
+
+  margin-bottom: .65rem;
+
+  color: rgba(255, 255, 255, .8);
+
+  font-size: .72rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: .13em;
+}
+
+.contact-field input,
+.contact-field textarea {
+  width: 100%;
+
+  padding: .3rem 0 .7rem;
+
+  border: 0;
+  border-bottom: 1px solid rgba(255, 255, 255, .35);
+  border-radius: 0;
+
+  background: transparent;
+  color: var(--paper);
+
+  font: inherit;
+  outline: none;
+}
+
+.contact-field input::placeholder,
+.contact-field textarea::placeholder {
+  color: rgba(255, 255, 255, .42);
+}
+
+.contact-field input:focus,
+.contact-field textarea:focus {
+  border-bottom-color: var(--paper);
+}
+
+.contact-field--message {
+  margin-top: 1.8rem;
+}
+
+.contact-field textarea {
+  min-height: 90px;
+  resize: vertical;
+}
+
+
+/* Privacy */
+
+.contact-privacy {
+  display: flex;
+  align-items: flex-start;
+  gap: .8rem;
+
+  margin-top: 1.4rem;
+
+  color: rgba(255, 255, 255, .7);
+
+  font-size: .82rem;
+  line-height: 1.5;
+}
+
+.contact-privacy input {
+  margin-top: .2rem;
+}
+
+.contact-privacy a {
+  color: inherit;
+  text-decoration: underline;
+}
+
+
+/* Pulsante */
+
+.contact-submit {
+  display: inline-flex;
+  align-items: center;
+  gap: 1.2rem;
+
+  margin-top: 2rem;
+  padding: 1rem 1.7rem;
+
+  border: 0;
+  border-radius: 999px;
+
+  background: var(--paper);
+  color: var(--accent-dark);
+
+  font-family: var(--sans);
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: .06em;
+
+  cursor: pointer;
+}
+
+.contact-submit span {
+  font-size: 1.15rem;
+}
+
+
+/* --------------------------------------------------------------------------
+   Frase laterale
+   -------------------------------------------------------------------------- */
+
+.contact-quote {
+  padding: 3.5rem 0 2rem 3rem;
+
+  border-left: 1px solid rgba(255, 255, 255, .25);
+}
+
+.contact-quote > p {
+  margin: 0;
+
+  color: var(--paper);
+
+  font-family: var(--serif);
+  font-size: clamp(2rem, 3vw, 2.8rem);
+  font-style: italic;
+  line-height: 1.08;
+}
+
+.contact-quote__line {
+  display: block;
+
+  width: 42px;
+  height: 1px;
+
+  margin: 2rem 0;
+
+  background: rgba(255, 255, 255, .7);
+}
+
+.contact-quote small {
+  display: block;
+
+  max-width: 260px;
+
+  color: rgba(255, 255, 255, .7);
+
+  font-size: .9rem;
+  line-height: 1.65;
+}
+
+
+/* --------------------------------------------------------------------------
+   Sedi
+   -------------------------------------------------------------------------- */
+
+.contact-locations {
+  margin-top: 4rem;
+}
+
+.contact-locations__grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2rem;
+}
+
+.location-card {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+
+  background: var(--paper);
+  color: var(--ink);
+
+  border-radius: 1.25rem;
+  overflow: hidden;
+}
+
+.location-card__text {
+  padding: 1.6rem;
+}
+
+.location-card h3 {
+  margin: 0 0 .65rem;
+
+  font-family: var(--serif);
+  font-size: 1.25rem;
+}
+
+.location-card p {
+  margin: 0 0 1.3rem;
+
+  color: var(--ink-soft);
+
+  font-size: .88rem;
+  line-height: 1.55;
+}
+
+.location-card a {
+  color: var(--accent);
+
+  font-size: .85rem;
+  text-decoration: underline;
+}
+
+.location-card__map {
+  min-height: 180px;
+}
+
+.location-card__map iframe {
+  display: block;
+
+  width: 100%;
+  height: 100%;
+  min-height: 180px;
+
+  border: 0;
+}
+
+
+/* ==========================================================================
+   CONTATTI — TABLET / MOBILE
+   ========================================================================== */
+
+@media (max-width: 800px) {
+
+  .contact-page {
+    padding: 3.5rem 0 3rem;
+  }
+
+
+  /* Intro */
+
+  .contact-intro {
+    margin-bottom: 2.5rem;
+    text-align: left;
+  }
+
+  .contact-intro h1 {
+    font-size: clamp(2.7rem, 12vw, 4rem);
+    text-align: left;
+  }
+
+  .contact-intro p {
+    margin-left: 0;
+    margin-right: 0;
+    text-align: left;
+  }
+
+
+  /* Informazioni */
+
+  .contact-info {
+    grid-template-columns: 1fr;
+  }
+
+  .contact-info__item {
+    text-align: left;
+  }
+
+  .contact-info__item + .contact-info__item {
+    border-left: 0;
+    border-top: 1px solid var(--line);
+  }
+
+
+  /* Form */
+
+  .contact-main {
+    grid-template-columns: 1fr;
+    gap: 3rem;
+  }
+
+  .contact-form__grid {
+    grid-template-columns: 1fr;
+  }
+
+
+  /* Frase laterale */
+
+  .contact-quote {
+    padding: 2.5rem 0 0;
+
+    border-left: 0;
+    border-top: 1px solid rgba(255, 255, 255, .25);
+
+    text-align: left;
+  }
+
+  .contact-quote > p br {
+    display: none;
+  }
+
+
+  /* Sedi */
+
+  .contact-locations__grid {
+    grid-template-columns: 1fr;
+  }
+
+  .location-card {
+    grid-template-columns: 1fr;
+  }
+
+  .location-card__text {
+    text-align: left;
+  }
+
+  .location-card__map {
+    min-height: 220px;
+  }
+
+  .location-card__map iframe {
+    min-height: 220px;
+  }
+
+}
+
+
+/* ==========================================================================
+   CONTATTI — SMARTPHONE
+   ========================================================================== */
+
+@media (max-width: 480px) {
+
+  .contact-page {
+    padding: 3rem 0;
+  }
+
+  .contact-intro h1 {
+    font-size: 2.8rem;
+  }
+
+  .contact-info__item {
+    padding: 1.5rem;
+  }
+
+  .contact-info__icon {
+    width: 42px;
+    height: 42px;
+    flex-basis: 42px;
+  }
+
+  .contact-main {
+    gap: 2.5rem;
+  }
+
+  .contact-locations {
+    margin-top: 3rem;
+  }
+
+}
