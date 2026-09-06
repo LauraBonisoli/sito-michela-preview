@@ -3,150 +3,587 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
+
 <title>Contatti — Dott.ssa Michela Vecchi Psicologa</title>
+
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,500&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,400;1,9..144,500&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+
 <link rel="stylesheet" href="styles.css">
 </head>
+
 <body>
 
 <header class="site-header">
   <div class="container site-header__row">
+
     <a class="logo" href="index.html">
       <img class="logo__badge" src="img/logo.png" alt="Logo Michela Vecchi Psicologa">
       Michela Vecchi
     </a>
+
     <nav class="main-nav" id="siteNav" aria-label="Menu principale">
+
       <a href="index.html">Home</a>
       <a href="chi-sono.html">Chi sono</a>
       <a href="di-cosa-mi-occupo.html">Di cosa mi occupo</a>
       <a href="il-mio-approccio.html">Il mio approccio</a>
       <a href="contatti.html" aria-current="page">Contatti</a>
+
       <div class="socials socials--in-nav">
-        <a href="https://www.instagram.com/michelavecchi.psicologa" aria-label="Instagram" target="_blank" rel="noopener">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="5"></rect><circle cx="12" cy="12" r="4"></circle><circle cx="17.3" cy="6.7" r="0.8" fill="currentColor" stroke="none"></circle></svg>
+
+        <a
+          href="https://www.instagram.com/michelavecchi.psicologa"
+          aria-label="Instagram"
+          target="_blank"
+          rel="noopener"
+        >
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor"
+               stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round">
+            <rect x="3" y="3" width="18" height="18" rx="5"></rect>
+            <circle cx="12" cy="12" r="4"></circle>
+            <circle cx="17.3" cy="6.7" r="0.8" fill="currentColor" stroke="none"></circle>
+          </svg>
         </a>
-        <a href="https://www.linkedin.com/in/michela-vecchi-b958012a8/" aria-label="LinkedIn" class="social--filled" target="_blank" rel="noopener">
+
+        <a
+          href="https://www.linkedin.com/in/michela-vecchi-b958012a8/"
+          aria-label="LinkedIn"
+          class="social--filled"
+          target="_blank"
+          rel="noopener"
+        >
           <span class="socials__glyph socials__glyph--linkedin">in</span>
         </a>
-        <a href="https://www.valpomed.it/" aria-label="ValpoMed" class="social--filled social--filled-alt" target="_blank" rel="noopener">
+
+        <a
+          href="https://www.valpomed.it/"
+          aria-label="ValpoMed"
+          class="social--filled social--filled-alt"
+          target="_blank"
+          rel="noopener"
+        >
           <span class="socials__glyph socials__glyph--linkedin">V</span>
         </a>
+
       </div>
     </nav>
+
     <div class="header-actions">
+
       <div class="socials">
-      <a href="https://www.instagram.com/michelavecchi.psicologa" aria-label="Instagram" target="_blank" rel="noopener">
-        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="5"></rect><circle cx="12" cy="12" r="4"></circle><circle cx="17.3" cy="6.7" r="0.8" fill="currentColor" stroke="none"></circle></svg>
-      </a>
-      <a href="https://www.linkedin.com/in/michela-vecchi-b958012a8/" aria-label="LinkedIn" class="social--filled" target="_blank" rel="noopener">
-        <span class="socials__glyph socials__glyph--linkedin">in</span>
-      </a>
-      <a href="https://www.valpomed.it/" aria-label="ValpoMed" class="social--filled social--filled-alt" target="_blank" rel="noopener">
-        <span class="socials__glyph socials__glyph--linkedin">V</span>
-      </a>
+
+        <a
+          href="https://www.instagram.com/michelavecchi.psicologa"
+          aria-label="Instagram"
+          target="_blank"
+          rel="noopener"
+        >
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor"
+               stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round">
+            <rect x="3" y="3" width="18" height="18" rx="5"></rect>
+            <circle cx="12" cy="12" r="4"></circle>
+            <circle cx="17.3" cy="6.7" r="0.8" fill="currentColor" stroke="none"></circle>
+          </svg>
+        </a>
+
+        <a
+          href="https://www.linkedin.com/in/michela-vecchi-b958012a8/"
+          aria-label="LinkedIn"
+          class="social--filled"
+          target="_blank"
+          rel="noopener"
+        >
+          <span class="socials__glyph socials__glyph--linkedin">in</span>
+        </a>
+
+        <a
+          href="https://www.valpomed.it/"
+          aria-label="ValpoMed"
+          class="social--filled social--filled-alt"
+          target="_blank"
+          rel="noopener"
+        >
+          <span class="socials__glyph socials__glyph--linkedin">V</span>
+        </a>
+
       </div>
-      <button class="nav-toggle" aria-label="Apri il menu" aria-expanded="false" aria-controls="siteNav">
-        <span></span><span></span><span></span>
+
+      <button
+        class="nav-toggle"
+        aria-label="Apri il menu"
+        aria-expanded="false"
+        aria-controls="siteNav"
+      >
+        <span></span>
+        <span></span>
+        <span></span>
       </button>
+
     </div>
+
   </div>
 </header>
 
+
 <main>
 
-  <section class="page-hero" style="border-bottom:none; padding-bottom: 1rem;">
-    <div class="container page-hero__grid">
-      <div>
-        <span class="eyebrow">Contatti</span>
-        <h1>È con il <em class="accent-word">primo passo</em> che inizia il <em class="accent-word">cambiamento</em>.</h1>
-        <p class="page-hero__lede">
-          Scrivimi per fissare un primo colloquio conoscitivo, in studio o online.
-        </p>
-      </div>
-      <div class="page-hero__aside">
-        <strong>Prima di scrivere</strong>
-        <p style="margin:0;">Rispondo entro 24-48 ore lavorative. Per urgenze, ti consiglio di chiamare direttamente.</p>
-      </div>
-    </div>
-  </section>
+  <!-- CONTATTI -->
+  <section class="contact-page contact-page--light">
 
-  <!-- CONTACT (stessa sezione della home) -->
-  <section class="contact contact--light" id="contatti" style="padding-top: 3rem;">
+    <!-- Ramoscello decorativo -->
+    <svg class="contact-branch"
+         viewBox="0 0 360 760"
+         fill="none"
+         aria-hidden="true">
+
+      <path
+        d="M300 -20
+           C255 80 255 175 285 265
+           C315 355 305 455 270 545
+           C250 600 225 665 205 780"
+        stroke="currentColor"
+        stroke-width="1.35"
+        stroke-linecap="round"/>
+
+      <path
+        d="M275 145
+           C220 120 180 75 165 20
+           C225 45 265 90 275 145Z"
+        stroke="currentColor"
+        stroke-width="1.35"
+        stroke-linejoin="round"/>
+
+      <path
+        d="M287 255
+           C215 238 160 195 125 135
+           C195 145 260 185 287 255Z"
+        stroke="currentColor"
+        stroke-width="1.35"
+        stroke-linejoin="round"/>
+
+      <path
+        d="M297 350
+           C325 305 345 260 352 215
+           C365 280 345 330 297 350Z"
+        stroke="currentColor"
+        stroke-width="1.35"
+        stroke-linejoin="round"/>
+
+      <path
+        d="M282 470
+           C225 450 180 408 155 355
+           C215 365 265 405 282 470Z"
+        stroke="currentColor"
+        stroke-width="1.35"
+        stroke-linejoin="round"/>
+
+      <path
+        d="M255 585
+           C300 555 330 515 345 470
+           C355 530 320 575 255 585Z"
+        stroke="currentColor"
+        stroke-width="1.35"
+        stroke-linejoin="round"/>
+
+    </svg>
+
+
     <div class="container">
-      <div style="text-align:center;">
-        <span class="eyebrow" style="justify-content:center;">Restiamo in contatto</span>
-      </div>
-      <h2 class="contact__title">Parliamone.</h2>
-      <p class="contact__lede">Compila il modulo qui sotto: ti risponderò appena possibile per fissare un primo colloquio.</p>
 
-      <div class="contact__info">
-        <div>
-          <h3>Dove ricevo</h3>
-          <p>Studio Valpomed, Sant’Ambrogio di Valpolicella (VR)<br>Studio Atletalab, Stallavena (VR)</p>
+      <!-- INTRO -->
+      <div class="contact-intro">
+
+        <span class="eyebrow contact-eyebrow">
+          Contatti
+        </span>
+
+        <h1>
+          Fai il <em>primo passo</em>.
+        </h1>
+
+        <p>
+          Se senti il bisogno di un confronto, desideri maggiori informazioni
+          o vuoi prenotare un primo colloquio, compila il modulo qui sotto.
+          Sarò felice di ascoltarti.
+        </p>
+
+      </div>
+
+
+      <!-- INFORMAZIONI -->
+      <div class="contact-info">
+
+        <div class="contact-info__item">
+
+          <div class="contact-info__icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                 stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M20 10c0 5-8 11-8 11S4 15 4 10a8 8 0 1 1 16 0Z"></path>
+              <circle cx="12" cy="10" r="2.5"></circle>
+            </svg>
+          </div>
+
+          <div>
+            <span class="contact-info__label">Dove ricevo</span>
+
+            <p>
+              <strong class="contact-place">Studio Valpomed</strong>,
+              Sant’Ambrogio di Valpolicella (VR)<br>
+
+              <strong class="contact-place">Studio Atletalab</strong>,
+              Stallavena (VR)
+            </p>
+          </div>
+
         </div>
-        <div>
-          <h3>Contatti</h3>
-          <p>Telefono: +39 351 378 7560<br>
-             E-mail: michelavecchi.psico@gmail.com 
+
+
+        <div class="contact-info__item">
+
+          <div class="contact-info__icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                 stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M22 16.92v3a2 2 0 0 1-2.18 2
+                       19.79 19.79 0 0 1-8.63-3.07
+                       19.5 19.5 0 0 1-6-6
+                       19.79 19.79 0 0 1-3.07-8.67
+                       A2 2 0 0 1 3.9 2h3
+                       a2 2 0 0 1 2 1.72
+                       c.12.9.33 1.78.62 2.63
+                       a2 2 0 0 1-.45 2.11L7.8 9.73
+                       a16 16 0 0 0 6 6l1.27-1.27
+                       a2 2 0 0 1 2.11-.45
+                       c.85.29 1.73.5 2.63.62
+                       A2 2 0 0 1 22 16.92z">
+              </path>
+            </svg>
+          </div>
+
+          <div>
+            <span class="contact-info__label">Contatti</span>
+
+            <p>
+              Telefono: +39 351 378 7560<br>
+              <span class="contact-email">
+                E-mail: michelavecchi.psico@gmail.com
+              </span>
+            </p>
+          </div>
+
+        </div>
+
+
+        <div class="contact-info__item">
+
+          <div class="contact-info__icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                 stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+              <rect x="3" y="5" width="18" height="16" rx="2"></rect>
+              <path d="M16 3v4M8 3v4M3 10h18"></path>
+            </svg>
+          </div>
+
+          <div>
+            <span class="contact-info__label">Quando ricevo</span>
+
+            <p>
+              Su appuntamento<br>
+              Disponibile anche online
+            </p>
+          </div>
+
+        </div>
+
+      </div>
+
+
+      <!-- FORM + FRASE LATERALE -->
+      <div class="contact-main">
+
+        <div class="contact-form-wrap">
+
+          <span class="contact-form-title">
+            Scrivimi
+          </span>
+
+          <form class="contact-form" onsubmit="return false;">
+
+            <div class="contact-form__grid">
+
+              <div class="contact-field">
+                <label for="nome">Nome</label>
+                <input
+                  id="nome"
+                  name="nome"
+                  type="text"
+                  placeholder="Il tuo nome">
+              </div>
+
+              <div class="contact-field">
+                <label for="cognome">Cognome</label>
+                <input
+                  id="cognome"
+                  name="cognome"
+                  type="text"
+                  placeholder="Il tuo cognome">
+              </div>
+
+              <div class="contact-field">
+                <label for="telefono">Telefono</label>
+                <input
+                  id="telefono"
+                  name="telefono"
+                  type="tel"
+                  placeholder="Il tuo numero">
+              </div>
+
+              <div class="contact-field">
+                <label for="email">Email *</label>
+                <input
+                  id="email"
+                  name="email"
+                  type="email"
+                  placeholder="La tua email"
+                  required>
+              </div>
+
+            </div>
+
+
+            <div class="contact-field contact-field--message">
+
+              <label for="messaggio">
+                Messaggio
+              </label>
+
+              <textarea
+                id="messaggio"
+                name="messaggio"
+                rows="4"
+                placeholder="Scrivi qui il tuo messaggio"></textarea>
+
+            </div>
+
+
+            <label class="contact-privacy">
+
+              <input type="checkbox" required>
+
+              <span>
+                Dichiaro di aver letto l'
+                <a href="#">Informativa Privacy</a>
+                e presto il mio consenso al trattamento dei dati personali
+                forniti tramite questo modulo.
+              </span>
+
+            </label>
+
+
+            <button
+              class="contact-submit"
+              type="submit"
+            >
+              Invia messaggio <span>→</span>
+            </button>
+
+          </form>
+
+        </div>
+
+
+        <aside class="contact-quote">
+
+          <p>
+            Ogni percorso<br>
+            inizia da una<br>
+            conversazione.
           </p>
-        </div>
-        <div>
-          <h3>Quando ricevo</h3>
-          <p>Su appuntamento · Disponibile anche online</p>
-        </div>
+
+          <span class="contact-quote__line"></span>
+
+          <small>
+            Puoi scrivermi per qualsiasi dubbio o curiosità:
+            ti risponderò il prima possibile.
+          </small>
+
+        </aside>
+
       </div>
 
-      <form class="contact-form" onsubmit="return false;">
-        <div class="field"><label for="nome">Nome</label><input id="nome" type="text" placeholder="Il tuo nome"></div>
-        <div class="field"><label for="cognome">Cognome</label><input id="cognome" type="text" placeholder="Il tuo cognome"></div>
-        <div class="field"><label for="telefono">Telefono</label><input id="telefono" type="tel" placeholder="Il tuo numero"></div>
-        <div class="field"><label for="email">Email *</label><input id="email" type="email" required placeholder="La tua email"></div>
-        <div class="field field--full"><label for="messaggio">Messaggio</label><textarea id="messaggio" rows="3" placeholder="Scrivi qui il tuo messaggio"></textarea></div>
-        <label class="consent"><input type="checkbox" required><span>Dichiaro di aver letto l'<a href="#">Informativa Privacy</a> e presto il mio consenso al trattamento dei dati personali forniti tramite questo modulo.</span></label>
-        <button class="btn btn--on-dark" type="submit">Invia messaggio</button>
-      </form>
 
-      <div class="map-grid">
-        <div class="map-embed">
-          <iframe src="https://www.google.com/maps?q=Case+Sparse+Pigna+15,+37015+Sant'Ambrogio+di+Valpolicella+VR&output=embed" loading="lazy" referrerpolicy="no-referrer-when-downgrade" title="Mappa Studio Valpomed"></iframe>
-          <p class="map-embed__caption">Studio Valpomed &mdash; Via Case Sparse Pigna 15, Sant&rsquo;Ambrogio di Valpolicella (VR)</p>
+      <!-- SEDI -->
+      <div class="contact-locations">
+
+        <span class="contact-form-title">
+          Le sedi
+        </span>
+
+
+        <div class="contact-locations__grid">
+
+          <!-- VALPOMED -->
+          <div class="location-card">
+
+            <div class="location-card__text">
+
+              <h3>Studio Valpomed</h3>
+
+              <p>
+                Via Case Sparse Pigna 15<br>
+                Sant’Ambrogio di Valpolicella (VR)
+              </p>
+
+              <a
+                href="https://www.google.com/maps?q=Case+Sparse+Pigna+15,+37015+Sant'Ambrogio+di+Valpolicella+VR"
+                target="_blank"
+                rel="noopener"
+              >
+                Apri su Google Maps →
+              </a>
+
+            </div>
+
+
+            <div class="location-card__map">
+
+              <iframe
+                src="https://www.google.com/maps?q=Case+Sparse+Pigna+15,+37015+Sant'Ambrogio+di+Valpolicella+VR&output=embed"
+                loading="lazy"
+                allowfullscreen
+                referrerpolicy="strict-origin-when-cross-origin"
+                title="Mappa Studio Valpomed">
+              </iframe>
+
+            </div>
+
+          </div>
+
+
+          <!-- ATLETALAB -->
+          <div class="location-card">
+
+            <div class="location-card__text">
+
+              <h3>Studio Atletalab</h3>
+
+              <p>
+                Via Tinazzi 2<br>
+                Stallavena (VR)
+              </p>
+
+              <a
+                href="https://www.google.com/maps?q=Via+Tinazzi+2,+37023+Stallavena+VR"
+                target="_blank"
+                rel="noopener"
+              >
+                Apri su Google Maps →
+              </a>
+
+            </div>
+
+
+            <div class="location-card__map">
+
+              <iframe
+                src="https://www.google.com/maps?q=Via+Tinazzi+2,+37023+Stallavena+VR&output=embed"
+                loading="lazy"
+                allowfullscreen
+                referrerpolicy="strict-origin-when-cross-origin"
+                title="Mappa Studio Atletalab">
+              </iframe>
+
+            </div>
+
+          </div>
+
         </div>
-        <div class="map-embed">
-          <iframe src="https://www.google.com/maps?q=Via+Tinazzi+2,+37023+Stallavena+VR&output=embed" loading="lazy" referrerpolicy="no-referrer-when-downgrade" title="Mappa Studio Atletalab"></iframe>
-          <p class="map-embed__caption">Studio Atletalab &mdash; Via Tinazzi 2, Stallavena (VR)</p>
-        </div>
+
       </div>
 
+
+      <!-- LINEA -->
+      <div class="contact-legal-divider"></div>
+
+
+      <!-- LEGALE -->
       <div class="footer-legal footer-legal--in-contact">
-        <p>ISCRIZIONE ALL'ALBO: Ordine degli Psicologi del Veneto n. 13951 · P.IVA 05107280231</p>
-        <p>© 2026 Michela Vecchi — Tutti i diritti riservati · <a href="#">Privacy e Cookie Policy</a></p>
+
+        <p>
+          ISCRIZIONE ALL'ALBO:
+          Ordine degli Psicologi del Veneto n. 13951 ·
+          P.IVA 05107280231
+        </p>
+
+        <p>
+          © 2026 Michela Vecchi — Tutti i diritti riservati ·
+          <a href="#">Privacy e Cookie Policy</a>
+        </p>
+
       </div>
+
     </div>
+
   </section>
 
-  <!-- FAQ breve -->
+
+  <!-- FAQ -->
   <section class="faq">
+
     <div class="container">
-      <span class="eyebrow" style="justify-content:center; display:flex;">Prima di scrivere</span>
-      <h2 style="text-align:center;">Domande frequenti</h2>
+
+      <span
+        class="eyebrow"
+        style="justify-content:center; display:flex;"
+      >
+        Prima di scrivere
+      </span>
+
+      <h2 style="text-align:center;">
+        Domande frequenti
+      </h2>
+
       <div class="faq__list">
+
         <details class="faq-item" open>
-          <summary>Come si fissa il primo appuntamento?</summary>
-          <p>Tramite il modulo qui sopra, oppure telefonicamente: ci accordiamo insieme su data e modalità (studio o online).
+
+          <summary>
+            Come si fissa il primo appuntamento?
+          </summary>
+
+          <p>
+            Tramite il modulo qui sopra, oppure telefonicamente:
+            ci accordiamo insieme su data e modalità
+            (studio o online).
+          </p>
+
         </details>
+
+
         <details class="faq-item">
-          <summary>È possibile richiedere fattura?</summary>
-          <p>Sì, viene rilasciata regolare fattura per ogni seduta.
-        </p>
+
+          <summary>
+            È possibile richiedere fattura?
+          </summary>
+
+          <p>
+            Sì, viene rilasciata regolare fattura per ogni seduta.
+          </p>
+
         </details>
+
       </div>
+
     </div>
+
   </section>
 
 </main>
 
+
 <script src="script.js" defer></script>
+
 </body>
 </html>
