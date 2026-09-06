@@ -631,11 +631,13 @@ p { margin: 0 0 1rem; color: var(--ink-soft); }
   color: var(--ink-soft);
 }
 .contact-legal-divider {
-  width: 70%;
+  width: 72%;
   max-width: 860px;
   height: 1px;
-  margin: 3rem auto 2rem;
-  background: rgba(242, 240, 234, .22);
+
+  margin: 4rem auto 0;
+
+  background: rgba(242, 240, 234, .28);
 }
 .footer-legal {
   text-align: center;
@@ -1356,7 +1358,7 @@ p { margin: 0 0 1rem; color: var(--ink-soft); }
   overflow: hidden;
   background: var(--accent-dark);
   color: var(--bg);
-  padding: 5.5rem 0 4rem;
+  padding: 5.5rem 0 2rem;
 }
 
 .contact-page > .container {
@@ -1371,13 +1373,13 @@ p { margin: 0 0 1rem; color: var(--ink-soft); }
 
 .contact-branch {
   position: absolute;
-  top: -1rem;
-  right: 0;
+  top: 0;
+  right: 1.5rem;
 
-  width: 390px;
+  width: 300px;
   height: auto;
 
-  color: rgba(242, 240, 234, .30);
+  color: rgba(242, 240, 234, .28);
 
   pointer-events: none;
   z-index: 0;
