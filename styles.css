@@ -493,6 +493,7 @@ p { margin: 0 0 1rem; color: var(--ink-soft); }
   text-align: center;
   color: var(--bg);
 }
+
 .contact__lede {
   text-align: center;
   max-width: 46ch;
@@ -628,6 +629,13 @@ p { margin: 0 0 1rem; color: var(--ink-soft); }
   margin-bottom: 2.2rem;
   font-size: .78rem;
   color: var(--ink-soft);
+}
+.contact-legal-divider {
+  width: 70%;
+  max-width: 860px;
+  height: 1px;
+  margin: 3rem auto 2rem;
+  background: rgba(242, 240, 234, .22);
 }
 .footer-legal {
   text-align: center;
@@ -1566,6 +1574,7 @@ p { margin: 0 0 1rem; color: var(--ink-soft); }
 }
 
 .contact-field--message {
+  grid-column: 1 / -1;
   margin-top: 1.8rem;
 }
 
@@ -1661,7 +1670,7 @@ p { margin: 0 0 1rem; color: var(--ink-soft); }
   font-family: var(--serif);
   font-size: clamp(2rem, 3vw, 2.8rem);
   font-style: italic;
-  font-weight: 500;
+  font-weight: 400;
   line-height: 1.08;
 }
 
@@ -1814,11 +1823,18 @@ p { margin: 0 0 1rem; color: var(--ink-soft); }
   /* Ramoscello */
 
   .contact-branch {
-    top: 0;
-    right: -30px;
-    width: 230px;
-    opacity: .55;
-  }
+  position: absolute;
+  top: 0;
+  right: 1.5rem;
+
+  width: 250px;
+  height: auto;
+
+  color: rgba(242, 240, 234, .24);
+
+  pointer-events: none;
+  z-index: 0;
+}
 
 
   /* Intro */
