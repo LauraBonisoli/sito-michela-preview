@@ -1363,13 +1363,13 @@ p { margin: 0 0 1rem; color: var(--ink-soft); }
 
 .contact-branch {
   position: absolute;
-  top: 1.5rem;
-  right: 3rem;
+  top: -1rem;
+  right: 0;
 
-  width: 300px;
+  width: 390px;
   height: auto;
 
-  color: rgba(255, 255, 255, .28);
+  color: rgba(242, 240, 234, .30);
 
   pointer-events: none;
   z-index: 0;
@@ -1783,6 +1783,22 @@ p { margin: 0 0 1rem; color: var(--ink-soft); }
   white-space: nowrap;
 }
 
+.site-footer {
+  background: #45647C;
+  color: rgba(242, 240, 234, .75);
+  border-top: 1px solid rgba(242, 240, 234, .18);
+  padding: 2rem 0;
+}
+
+.footer-legal {
+  text-align: center;
+  font-size: .78rem;
+  line-height: 1.7;
+}
+
+.footer-legal p {
+  margin: .2rem 0;
+}
 
 /* ==========================================================================
    TABLET / MOBILE
@@ -1799,10 +1815,8 @@ p { margin: 0 0 1rem; color: var(--ink-soft); }
 
   .contact-branch {
     top: 0;
-    right: -70px;
-
-    width: 190px;
-
+    right: -30px;
+    width: 230px;
     opacity: .55;
   }
 
