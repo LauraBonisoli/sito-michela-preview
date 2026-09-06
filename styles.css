@@ -1772,6 +1772,17 @@ p { margin: 0 0 1rem; color: var(--ink-soft); }
   border: 0;
 }
 
+/* Nomi degli studi */
+.contact-place {
+  color: var(--accent);
+  font-weight: 600;
+}
+
+/* Mantiene E-mail + indirizzo sulla stessa riga */
+.contact-email {
+  white-space: nowrap;
+}
+
 
 /* ==========================================================================
    TABLET / MOBILE
