@@ -1363,8 +1363,8 @@ p { margin: 0 0 1rem; color: var(--ink-soft); }
 
 .contact-branch {
   position: absolute;
-  top: -2rem;
-  right: -2rem;
+  top: 1.5rem;
+  right: 3rem;
 
   width: 300px;
   height: auto;
